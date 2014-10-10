@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 <div id="header" class="wrap">
-	<div id="logo"><img src="images/logo.gif" /></div>
+	<div id="logo"><img src="../images/logo.gif" /></div>
 	<div class="search">
 	<!--
 		<form method="get">
@@ -44,7 +44,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<c:forEach items="${sessionScope.result}" var="house" varStatus="status">
 		<c:if test="${status.count%2 != 0}">
 		<tr>
-			<td class="house-thumb"><span><a href="show?id=${house.id}"><img src="images/thumb_house.gif" /></a></span></td>
+			<td class="house-thumb"><span><a href="show?id=${house.id}"><img src="../images/thumb_house.gif" /></a></span></td>
 			<td>
 				<dl>
 					<dt><a href="show?id=${house.id}">${house.title}</a></dt>
