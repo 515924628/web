@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+        <default-action-ref name="defaultAction"/>
+        <action name="defaultAction">
+            <result name="success">/error.jsp</result>
+        </action>
+        <action name="HelloWorld" class="com.sg.zfw.web.action.HelloWorld">
+            <result name="ss">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <!--
+
+              <action  name="user" class="com.sg.zfw.web.action.UserAction" >
+                 <result name="success">/page/success.jsp</result>
+                 <result name="regis">/page/register.jsp</result>
+             </action>
+
+              <action  name="login" class="com.sg.zfw.web.action.UserAction" method="login" >
+                 <result name="success">/page/success.jsp</result>
+                 <result name="regis">/page/register.jsp</result>
+             </action>-->
+
+        <action name="user_*" class="com.sg.zfw.web.action.UserAction" method="{1}">
+            <result name="success">/page/{1}_success.jsp</result>
+            <result name="regis">/page/register.jsp</result>
+        </action>
+
+        <action name="manage" class="com.sg.zfw.web.action.Manage">
+            <result name="success">/page/manage.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+</struts>
