@@ -1,7 +1,7 @@
-package com.sg.zfw.web.action;
+package ch01;
 
 import com.opensymphony.xwork2.Action;
-import com.sg.zfw.bean.User1;
+import ch01.User1;
 
 /**
  * Created by zpy on 14.10.10.

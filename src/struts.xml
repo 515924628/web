@@ -36,7 +36,7 @@
             <result name="error">/error.jsp</result>
         </action>
 
-        <action name="login1" class="com.sg.zfw.web.action.LoginAction">
+        <action name="login1" class="ch01.LoginAction">
             <result>/success.jsp</result>
             <result name="error">/error.jsp</result>
         </action>

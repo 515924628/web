@@ -1,4 +1,4 @@
-package com.sg.zfw.bean;
+package ch01;
 
 import java.io.Serializable;
 
