@@ -40,5 +40,10 @@
             <result>/success.jsp</result>
             <result name="error">/error.jsp</result>
         </action>
+
+        <action name="ruku" class="cangku.CangKuAction">
+            <result>/cangku/rukuwancheng.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
     </package>
 </struts>
