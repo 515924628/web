@@ -13,54 +13,52 @@
 </head>
 <body>
 <form name="ruku" action="ruku.action">
-    <center>
-        <table>
-            <tr>
-                <td>货主</td>
-                <td><input type="text" name="name"></td>
-            </tr>
-            <tr>
-                <td>货物名称</td>
-                <td><input type="text" name="huoming"></td>
-            </tr>
-            <tr>
-                <td>规格</td>
-                <td><input type="text" name="guige"></td>
-            </tr>
-            <tr>
-                <td>货物等级</td>
-                <td><input type="text" name="dengji"></td>
-            </tr>
-            <tr>
-                <td>接收数量</td>
-                <td><input type="text" name="jieshoushuliang"></td>
-            </tr>
-            <tr>
-                <td>破损数量</td>
-                <td><input type="text" name="posunshuliang"></td>
-            </tr>
-            <tr>
-                <td>搁置数量</td>
-                <td><input type="text" name="gezhishuliang"></td>
-            </tr>
-            <tr>
-                <td>货物重量</td>
-                <td><input type="text" name="zhongliang"></td>
-            </tr>
-            <tr>
-                <td>货物体积</td>
-                <td><input type="text" name="tiji"></td>
-            </tr>
-            <tr>
-                <td>生产日期</td>
-                <td><input type="text" name="shengchanriqi"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="提交"></td>
-            </tr>
+    <table>
+        <tr>
+            <td><label for="name">货主</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="huoming">货物名称</label></td>
+            <td><input type="text" name="huoming" id="huoming"></td>
+        </tr>
+        <tr>
+            <td><label for="guige">规格</label></td>
+            <td><input type="text" name="guige" id="guige"></td>
+        </tr>
+        <tr>
+            <td><label for="dengji">货物等级</label></td>
+            <td><input type="text" name="dengji" id="dengji"></td>
+        </tr>
+        <tr>
+            <td><label for="jieshoushuliang">接收数量</label></td>
+            <td><input type="text" name="jieshoushuliang" id="jieshoushuliang"></td>
+        </tr>
+        <tr>
+            <td><label for="posunshuliang">破损数量</label></td>
+            <td><input type="text" name="posunshuliang" id="posunshuliang"></td>
+        </tr>
+        <tr>
+            <td><label for="gezhishuliang">搁置数量</label></td>
+            <td><input type="text" name="gezhishuliang" id="gezhishuliang"></td>
+        </tr>
+        <tr>
+            <td><label for="zhongliang">货物重量</label></td>
+            <td><input type="text" name="zhongliang" id="zhongliang"></td>
+        </tr>
+        <tr>
+            <td><label for="tiji">货物体积</label></td>
+            <td><input type="text" name="tiji" id="tiji"></td>
+        </tr>
+        <tr>
+            <td><label for="shengchanriqi">生产日期</label></td>
+            <td><input type="text" name="shengchanriqi" id="shengchanriqi"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+        </tr>
 
-        </table>
-    </center>
+    </table>
 </form>
 </body>
 </html>
