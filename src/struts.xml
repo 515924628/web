@@ -6,10 +6,17 @@
 
 <struts>
     <package name="default" extends="struts-default">
+
+        <interceptors>
+            <interceptor name="login" class="com.sg.zfw.web.action.Ilogin"/>
+        </interceptors>
+
         <default-action-ref name="defaultAction"/>
+
         <action name="defaultAction">
             <result name="success">/error.jsp</result>
         </action>
+
         <action name="HelloWorld" class="com.sg.zfw.web.action.HelloWorld">
             <result name="ss">/success.jsp</result>
             <result name="error">/error.jsp</result>
@@ -32,6 +39,7 @@
         </action>
 
         <action name="manage" class="com.sg.zfw.web.action.Manage">
+            <interceptor-ref name="login"/>
             <result name="success">/success.jsp</result>
             <result name="error">/error.jsp</result>
         </action>
